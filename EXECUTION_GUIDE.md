@@ -11,6 +11,10 @@ Executes everything defined in `testng.xml` (Both BDD and TestNG).
 ```powershell
 mvn clean test
 ```
+*   **Run in Headless Mode (For CI/GitHub Actions)**:
+    ```powershell
+    mvn clean test -Dheadless=true
+    ```
 
 ### 2. Run ONLY Cucumber BDD Tests
 Targets only the `TestRunner` class.

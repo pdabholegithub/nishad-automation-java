@@ -23,6 +23,11 @@ public class DriverManager {
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
+                if (System.getProperty("headless") != null && System.getProperty("headless").equals("true")) {
+                    options.addArguments("--headless");
+                    options.addArguments("--disable-gpu");
+                    options.addArguments("--window-size=1920,1080");
+                }
                 dr = new ChromeDriver(options);
                 break;
             case "firefox":
