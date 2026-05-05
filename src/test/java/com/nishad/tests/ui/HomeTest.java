@@ -1,6 +1,7 @@
 package com.nishad.tests.ui;
 
 import com.nishad.pages.HomePage;
+import com.nishad.tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
