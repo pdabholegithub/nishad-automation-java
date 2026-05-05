@@ -21,6 +21,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
+    - name: Run Code Purity Check (Checkstyle)
+      run: mvn checkstyle:check
+
     - name: Run Automation Tests
       run: mvn clean test -Dheadless=true
 
