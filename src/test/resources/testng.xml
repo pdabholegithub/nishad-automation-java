@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Nishad IT Solutions Suite" parallel="classes" thread-count="2">
+    <test name="Cucumber BDD Tests">
+        <classes>
+            <class name="com.nishad.runners.TestRunner"/>
+        </classes>
+    </test>
+    
+    <test name="Standard TestNG Tests">
+        <classes>
+            <class name="com.nishad.tests.ui.HomeTest"/>
+            <class name="com.nishad.tests.api.PostApiTest"/>
+        </classes>
+    </test>
+</suite>
